@@ -10,12 +10,6 @@ The function should be able to act the same as a normal printf() which means pri
 | ----------- | -------------------------------------------------- |
 | %d          | decimal integer base 10                            |
 | %i          | a decimal integer (detects the base automatically) |
-| %u          |int unsigned decimal                                |
-| %o          |an octal (base 8) integer                           |
-| %X          | a hexadecimal (base 16) integer                    |
 | %c          |a single character                                  |
 | %s          |a string                                            |
-| %p          |an address (or pointer)                             |
-| %%          | the % symbol                                       |
-| %r          | any other sign should be printed as it is          |
 
