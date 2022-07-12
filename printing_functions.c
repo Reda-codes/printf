@@ -34,3 +34,32 @@ int print_string(va_list arg)
 
 	return (i);
 }
+
+/**
+ * print_int - prints an integer.
+ * @arg: int input
+ * Return: return program's execution status
+ */
+int print_int(va_list arg)
+{
+	int num = va_arg(arg, int);
+	unsigned int d = 1, i, r, Printed = 0;
+
+
+	if (num < 0)
+	{
+		_putchar('-');
+		Printed++;
+		num *= -1;
+	}
+
+	for (i = 0; num / d > 9; i++, d *= 10)
+	;
+
+	for (; d >= 1; num %= d, d /= 10, Printed++)
+	{
+		r = num / d;
+		_putchar('0' + r);
+	}
+	return (Printed);
+}

@@ -8,6 +8,7 @@ int _putchar(char c);
 int print_char(va_list arg);
 int print_string(va_list arg);
 int get_func(char plus, va_list arg);
+int print_int(va_list arg);
 
 /**
  * struct fn - printing functions structure
